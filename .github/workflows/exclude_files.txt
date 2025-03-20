@@ -1,0 +1,25 @@
+# 忽略單一文件
+#debug.log
+#temp.tmp
+#Add your file
+
+# 忽略整個目錄
+.vscode/
+CI_Tools/
+scripts/
+examples/
+docs/
+components/
+toochain/arm/
+toochain/isp_too/
+toochain/windows/
+
+#忽略某個目錄下的特定文件
+
+# 忽略所有 `.tmp` 和 `.swp` 文件
+#*.tmp
+#*.swp
+
+
+
+
