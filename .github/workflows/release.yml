@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: RafaelMicro/Rafael-IOT-SDK-Internal  # prive repo
-          token: ${{ secrets.IVESTEST }}  # need `repo` PAT
+          token: ${{ secrets.RAFAEL_PRIV_TOKEN }}  # need `repo` PAT
           path: private_repo  # download private_repo folder
           ref: main  # sync main branch
 
@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: RafaelMicro/Rafael-SDK  # publid repo
-          token: ${{ secrets.IVESTEST }}  #  need `repo` PAT
+          token: ${{ secrets.RAFAEL_PRIV_TOKEN }}  #  need `repo` PAT
           path: public_repo  # download public_repo folder
           ref: main
 
