@@ -1,4 +1,4 @@
-name: Sync Private Repo to Public Repo
+name: Release
 
 on:
   workflow_dispatch:  # 
