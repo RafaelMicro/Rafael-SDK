@@ -30,11 +30,6 @@ jobs:
       - name: Sync Specific Files
         run: |
           cd public_repo
-
-          mkdir selected_files
-          while IFS= read -r file; do
-            rsync -av --progress "$file" selected_files/
-          done < sync_files.txt
           
           # Copy file or folder
           rsync -av --exclude-from=exclude_files.txt private_repo/ ./  # copy `config/` folder
